@@ -24,3 +24,4 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+![Preview](https://raw.githubusercontent.com/szorfein/penthotal/master/preview.png "Preview")

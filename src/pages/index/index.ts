@@ -17,7 +17,7 @@ export class IndexPage {
         return Observable.of([
             {
                 _id: 0,
-                img: 'localhost/asset/bg.jpg',
+                img: 'http://localhost/assets/bg.jpg',
                 title: 'Hello',
                 subtitle: 'Unix Roxx !'
             },
