@@ -7,25 +7,19 @@ import { Index } from '../../models/index'
 })
 
 export class IndexPage {
-    backgroundImage: Observable<Index[]>
+    indexMsgs: Observable<Index[]>
 
     constructor() {
-        this.backgroundImage = this.checkIndex()
+        this.indexMsgs = this.checkIndex()
     }
 
     private checkIndex(): Observable<Index[]> {
         return Observable.of([
             {
                 _id: 0,
-                img: 'http://localhost/assets/bg.jpg',
-                title: 'Hello',
-                subtitle: 'Unix Roxx !'
-            },
-            {
-                _id: 1,
-                img: 'localhost/asset/bg.jpg',
-                title: 'Second useless msg',
-                subtitle: 'And we go...'
+                img: '/assets/imgs/bg.jpg',
+                title: 'Evil Corp',
+                subtitle: 'Evil Corp control the world'
             }
         ])
     }

@@ -6,10 +6,11 @@
     </ion-navbar>
 </ion-header>
 <ion-content>
-    <div class="index">
+    <div class="index" *ngFor="let indexMsg of indexMsgs | async">
         <div class="filter-banner">
-            <h1>Hi Evil Corp</h1>
-            <p>Evil Corp control the world</p>
+            <img class="banner" [src]="indexMsg.img">
+            <h1>{{ indexMsg.title }}</h1>
+            <p>{{ indexMsg.subtitle }}</p>
         </div>
     </div>
     <div>
