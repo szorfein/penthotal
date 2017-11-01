@@ -3,19 +3,32 @@
         <ion-title>
             Evil Corp
         </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only>
+                <ion-icon name="add-circle"></ion-icon>
+            </button>
+        </ion-buttons>
     </ion-navbar>
 </ion-header>
+
 <ion-content>
+    <ion-header no-border>
+        <ion-toolbar color="trans">
+            <ion-buttons start>
+                <ion-icon name="person-add"></ion-icon>
+            </ion-buttons>
+        </ion-toolbar>
+    </ion-header>
     <div class="index" *ngFor="let indexMsg of indexMsgs | async">
         <div class="filter-banner">
-            <img class="banner" [src]="indexMsg.img">
+            <img class="banner" [src]="indexMsg.img" />
             <h1>{{ indexMsg.title }}</h1>
-            <p>{{ indexMsg.subtitle }}</p>
+            <p>{{ indexMsg.subtitle }}</p>
         </div>
     </div>
+    <ion-footer color="trans">
+    </ion-footer>
     <div>
         Hello !
     </div>
 </ion-content>
-<ion-footer>
-</ion-footer>
