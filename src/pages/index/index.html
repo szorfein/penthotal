@@ -4,9 +4,7 @@
             Evil Corp
         </ion-title>
         <ion-buttons end>
-            <button ion-button icon-only>
-                <ion-icon name="add-circle"></ion-icon>
-            </button>
+            <button ion-button menuToggle="right">Toggle Right Menu</button>
         </ion-buttons>
     </ion-navbar>
 </ion-header>
@@ -14,11 +12,14 @@
 <ion-content>
     <ion-header no-border>
         <ion-toolbar color="trans">
-            <ion-buttons start>
-                <ion-icon name="person-add"></ion-icon>
-            </ion-buttons>
+            <button ion-button icon-start color="dark" round>
+                <ion-icon name="settings"></ion-icon>
+                background
+            </button>
         </ion-toolbar>
     </ion-header>
+    <banner></banner>
+    <!--
     <div class="index" *ngFor="let indexMsg of indexMsgs | async">
         <div class="filter-banner">
             <img class="banner" [src]="indexMsg.img" />
@@ -26,6 +27,7 @@
             <p>{{ indexMsg.subtitle }}</p>
         </div>
     </div>
+    -->
     <ion-footer color="trans">
     </ion-footer>
     <div>

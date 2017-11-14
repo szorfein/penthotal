@@ -1,4 +1,4 @@
-export interface Index {
+export interface Banner {
     _id?: number
     img?: string
     title?: string
