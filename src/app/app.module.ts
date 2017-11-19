@@ -5,6 +5,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { IndexPage } from '../pages/index/index'
 import { BannerPage } from '../pages/banner/banner'
+import { BannerFormPage } from '../pages/banner/banner_form'
+import { NavbarPage } from '../pages/navigation/navbar'
+import { LoginPage } from '../pages/login/login'
 
 import { MyApp } from './app.component';
 
@@ -12,7 +15,10 @@ import { MyApp } from './app.component';
   declarations: [
       MyApp,
       IndexPage,
-      BannerPage
+      BannerPage,
+      BannerFormPage,
+      NavbarPage,
+      LoginPage
   ],
   imports: [
     BrowserModule,
@@ -21,7 +27,9 @@ import { MyApp } from './app.component';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    IndexPage
+    IndexPage,
+    NavbarPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
@@ -29,4 +37,5 @@ import { MyApp } from './app.component';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
+
 export class AppModule {}

@@ -1,35 +1,18 @@
 <ion-header>
-    <ion-navbar color="banner">
+    <ion-navbar color="dark">
         <ion-title>
-            Evil Corp
+            {{ title }}
         </ion-title>
-        <ion-buttons end>
-            <button ion-button menuToggle="right">Toggle Right Menu</button>
+        <ion-buttons start>
+            <button ion-button menuToggle icon-only color="secondary">
+                <ion-icon name="menu"></ion-icon>
+            </button>
         </ion-buttons>
     </ion-navbar>
 </ion-header>
 
 <ion-content>
-    <ion-header no-border>
-        <ion-toolbar color="trans">
-            <button ion-button icon-start color="dark" round>
-                <ion-icon name="settings"></ion-icon>
-                background
-            </button>
-        </ion-toolbar>
-    </ion-header>
     <banner></banner>
-    <!--
-    <div class="index" *ngFor="let indexMsg of indexMsgs | async">
-        <div class="filter-banner">
-            <img class="banner" [src]="indexMsg.img" />
-            <h1>{{ indexMsg.title }}</h1>
-            <p>{{ indexMsg.subtitle }}</p>
-        </div>
-    </div>
-    -->
-    <ion-footer color="trans">
-    </ion-footer>
     <div>
         Hello !
     </div>

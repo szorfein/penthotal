@@ -34,13 +34,15 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+// TRON theme (cyan, dark)
+  primary:    #00897b,
+  secondary:  #b2dfdb,
   danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222,
+  light:      #b2dfdb,
+  dark:       #212121,
   banner:     rgba(6,6,8,.95),
   trans:      rgba(18,18,20,.1)
+// End TRON Theme
 );
 
 

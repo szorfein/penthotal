@@ -1,0 +1,28 @@
+<ion-menu [content]="myContent">
+
+    <ion-header color="dark">
+        <ion-toolbar>
+            <ion-title>{{ title }}</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content color="dark">
+        <ion-list>
+            <button ion-item>
+                Home
+            </button>
+            <button ion-item>
+                Friends
+            </button>
+            <button ion-item>
+                Events
+            </button>
+            <button ion-item>
+                Login
+            </button>
+                <ion-item menuClose detail-none>Close Menu</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav #myContent [root]="rootPage"></ion-nav>
