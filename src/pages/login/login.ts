@@ -5,7 +5,7 @@ import { Component } from '@angular/core'
 })
 
 export class LoginPage {
-    title: string = 'Login'
+    title : string = "Login"
 
     constructor() {}
 }

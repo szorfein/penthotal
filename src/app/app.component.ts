@@ -8,7 +8,6 @@ import { SplashScreen } from '@ionic-native/splash-screen'
 })
 
 export class MyApp {
-    title: string = "Menu"
 
     constructor(
         platform: Platform,

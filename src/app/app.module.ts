@@ -6,7 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { IndexPage } from '../pages/index/index'
 import { BannerPage } from '../pages/banner/banner'
 import { BannerFormPage } from '../pages/banner/banner_form'
-import { NavbarPage } from '../pages/navigation/navbar'
+import { NavMenuPage } from '../pages/navigation/nav_menu'
+import { NavBarPage } from '../pages/navigation/nav_bar'
 import { LoginPage } from '../pages/login/login'
 
 import { MyApp } from './app.component';
@@ -17,7 +18,8 @@ import { MyApp } from './app.component';
       IndexPage,
       BannerPage,
       BannerFormPage,
-      NavbarPage,
+      NavBarPage,
+      NavMenuPage,
       LoginPage
   ],
   imports: [
@@ -28,7 +30,7 @@ import { MyApp } from './app.component';
   entryComponents: [
     MyApp,
     IndexPage,
-    NavbarPage,
+    NavMenuPage,
     LoginPage
   ],
   providers: [

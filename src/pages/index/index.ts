@@ -1,15 +1,16 @@
-import { Component, OnInit, ViewChild } from '@angular/core'
-import { NavController } from 'ionic-angular'
+import { Component } from '@angular/core'
+import { App , MenuController } from 'ionic-angular'
 
 @Component({
     templateUrl: 'index.html'
 })
 
-export class IndexPage implements OnInit {
-    @ViewChild('myNav') nav: NavController
-    title : string = 'index'
+export class IndexPage {
+    title : string = 'Index'
 
-    constructor() {}
+    constructor(
+        app: App, 
+        menu: MenuController
+    ) { menu.enable(true) }
 
-    ngOnInit() {}
 }
