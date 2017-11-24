@@ -8,9 +8,12 @@ import { BannerPage } from '../pages/banner/banner'
 import { BannerFormPage } from '../pages/banner/banner_form'
 import { NavMenuPage } from '../pages/navigation/nav_menu'
 import { NavBarPage } from '../pages/navigation/nav_bar'
-import { LoginPage } from '../pages/login/login'
 
 import { MyApp } from './app.component';
+
+// login
+import { LoginModalPage } from '../pages/login/login_modal' 
+import { LoginPage } from '../pages/login/login'
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { MyApp } from './app.component';
       BannerFormPage,
       NavBarPage,
       NavMenuPage,
-      LoginPage
+      LoginPage,
+      LoginModalPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,8 @@ import { MyApp } from './app.component';
     MyApp,
     IndexPage,
     NavMenuPage,
-    LoginPage
+    LoginPage,
+    LoginModalPage
   ],
   providers: [
     StatusBar,
