@@ -34,7 +34,6 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-// Custom theme (cyan, purple, dark)
   primary:    #00897b,
   secondary:  #b2dfdb,
   danger:     #f53d3d,
@@ -42,9 +41,11 @@ $colors: (
   dark:       #212121,
   banner:     rgba(6,6,8,.95),
   trans:      rgba(18,18,20,.1)
-// End TRON Theme
 );
 
+$alert-md-background-color: #212121;
+$alert-ios-background: #212121;
+$alert-wp-backdrop-background: #212121;
 
 // App iOS Variables
 // --------------------------------------------------
@@ -56,7 +57,6 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
 
 
 
