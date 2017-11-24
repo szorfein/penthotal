@@ -7,3 +7,16 @@
         width: 400px;
     }
 }
+
+.main_menu {
+    // find a way for retrieve value from theme
+    background-color: #212121 !important;
+    .list {
+        background-color: transparent;
+    }
+    .list-md .item-block .item-inner {
+        border:none;
+        border-bottom: 1px solid #487;
+        margin-right: 10%;
+    }
+}
