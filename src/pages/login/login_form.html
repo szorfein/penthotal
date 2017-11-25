@@ -24,13 +24,11 @@
 
         </ion-list>
 
-        <div>
-            <button ion-button class="login-button" type="submit" block>Login</button>
-        </div>
+        <button ion-button [disabled]="!form.valid" class="login-button" type="submit" block>Login</button>
 
     </form>
 
-    <button ion-button outline block color="secondary">
+    <button ion-button clear block color="secondary" class="bb">
         Forget password
     </button>
 

@@ -1,5 +1,5 @@
 .menu-inner {
-    width: 250px;
+
     @media(min-width:576px) {
         width: 290px;
     }
@@ -9,14 +9,17 @@
 }
 
 .main_menu {
-    // find a way for retrieve value from theme
+
     background-color: #212121 !important;
-    .list {
-        background-color: transparent;
+
+    button {
+        font-weight: bold;
     }
-    .list-md .item-block .item-inner {
-        border:none;
-        border-bottom: 1px solid #487;
-        margin-right: 10%;
+
+    img {
+        width: 111px;
+        height: 111px;
+        margin-left: 1em;
     }
+
 }

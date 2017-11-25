@@ -1,27 +1,32 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## Dependencies
 
-## How to use this template
+Install Ionic-Cli & Meteor, globally or not.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+    $ npm install -g cordova ionic
+    $ curl https://install.meteor.com/ | sh 
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+Clone this repository
 
-### With the Ionic CLI:
+    $ git clone https://github.com/szorfein/penthotal.git
+    
+Node dependencies
+	
+    $ cd penthotal
+    $ npm install
+    $ cd penthotal/api/
+    $ meteor install
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+## Start
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
+Server:
 
-Then, to run it, cd into `myBlank` and run:
+    $ cd penthotal/api/
+    $ meteor 
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+Client:
 
-Substitute ios for android if not on a Mac.
+    $ cd penthotal/
+    $ ionic serve
+
 
 ![Preview](https://raw.githubusercontent.com/szorfein/penthotal/master/preview.jpg "Preview")

@@ -1,20 +1,22 @@
 <ion-menu [content]="content">
 
-    <ion-header>
-        <ion-toolbar color="primary">
-            <ion-title>Menu</ion-title>
-        </ion-toolbar>
-    </ion-header>
-
     <ion-content class="main_menu">
+        
+        <div padding>
+            <img src="/assets/imgs/LogoEvil.png" />
+        </div>
+
         <ion-list>
-            <button ion-item *ngFor="let p of pages" menuClose (click)="openPage(p)" color="dark">
-                {{ p.title }}
-            </button>
-            <button ion-item menuClose detail-none color="dark">
-                Close Menu
-            </button>
+            <ion-item color="dark">
+                <button ion-item *ngFor="let p of pages" menuClose (click)="openPage(p)" color="trans" clear>
+                    {{ p.title }}
+                </button>
+                <button ion-item menuClose detail-none color="dark" clear>
+                    Close Menu
+                </button>
+            </ion-item>
         </ion-list>
+
     </ion-content>
 
 </ion-menu>

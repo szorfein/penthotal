@@ -7,7 +7,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms'
 })
 
 export class LoginFormPage {
-    form
+    private form
 
     constructor() {
         this.form = new FormGroup({
