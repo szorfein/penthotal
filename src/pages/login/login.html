@@ -1,9 +1,9 @@
-<ion-header color="trans">
-    <button ion-button icon-only (click)="dismiss()">
+<ion-content class="login" padding>
+    <button ion-button icon-only (click)="dismiss()" class="close">
         <ion-icon name="close"></ion-icon>
     </button>
-</ion-header>
-
-<ion-content padding>
-    Login page
+    <div class="logo">
+        <img src="/assets/imgs/LogoEvil.png" />
+    </div>
+    <login-form></login-form>
 </ion-content>

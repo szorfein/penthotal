@@ -1,0 +1,19 @@
+.login {
+    background-color: #212121;
+}
+
+.close {
+    position: absolute;
+    right: 2%;
+    top: 1%;
+}
+.logo {
+    position: relative;
+    top: 10%;
+    img {
+        display: inherit;
+        height: 14rem;
+        width: 55%;
+        margin: auto;
+    }
+}

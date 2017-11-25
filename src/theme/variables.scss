@@ -35,7 +35,7 @@ $app-direction: ltr;
 
 $colors: (
   primary:    #00897b,
-  secondary:  #b2dfdb,
+  secondary:  #999,
   danger:     #f53d3d,
   light:      #b2dfdb,
   dark:       #212121,
@@ -43,6 +43,7 @@ $colors: (
   trans:      rgba(18,18,20,.1)
 );
 
+// alert
 $alert-md-background-color: #212121;
 $alert-ios-background: #212121;
 $alert-wp-backdrop-background: #212121;

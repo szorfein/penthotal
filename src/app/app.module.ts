@@ -14,6 +14,7 @@ import { MyApp } from './app.component';
 // login
 import { LoginModalPage } from '../pages/login/login_modal' 
 import { LoginPage } from '../pages/login/login'
+import { LoginFormPage } from '../pages/login/login_form'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginPage } from '../pages/login/login'
       NavBarPage,
       NavMenuPage,
       LoginPage,
-      LoginModalPage
+      LoginModalPage,
+      LoginFormPage
   ],
   imports: [
     BrowserModule,
