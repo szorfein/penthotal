@@ -1,5 +1,7 @@
+@import '../../theme/colors';
+
 .login {
-    background-color: #212121;
+    background-color: $bg;
 }
 
 .close {
@@ -7,9 +9,11 @@
     right: 2%;
     top: 1%;
 }
+
 .logo {
     position: relative;
     top: 10%;
+
     img {
         display: inherit;
         height: 128px;

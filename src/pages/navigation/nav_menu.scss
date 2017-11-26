@@ -1,3 +1,5 @@
+@import "../../theme/colors";
+
 .menu-inner {
 
     @media(min-width:576px) {
@@ -10,10 +12,13 @@
 
 .main_menu {
 
-    background-color: #212121 !important;
+    background-color: $bg;
 
     button {
-        font-weight: bold;
+        font-weight: 300;
+        &:hover {
+            background-color: $bgHover;
+        }
     }
 
     img {

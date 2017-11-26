@@ -33,35 +33,44 @@ $app-direction: ltr;
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
 
+@import 'colors';
+
 $colors: (
-  primary:    #00897b,
-  secondary:  #999,
-  danger:     #f53d3d,
-  light:      #b2dfdb,
-  dark:       #212121,
-  banner:     rgba(6,6,8,.95),
-  trans:      rgba(18,18,20,.1)
+  primary:    $primary,
+  secondary:  $secondary,
+  danger:     $danger,
+  light:      $light,
+  dark:       $dark,
+  banner:     $banner,
+  trans:      $trans
 );
 
 // alert
-$alert-md-background-color: #212121;
-$alert-ios-background: #212121;
-$alert-wp-backdrop-background: #212121;
+$alert-md-background-color: $dark;
+$alert-wp-backdrop-background: $dark;
+$alert-wp-input-text-color: $light;
 
 // menu
 $menu-width: 200px;
+
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
+$alert-ios-background: $dark;
+$alert-ios-input-text-color: $light;
 
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
+$alert-md-button-background-color: $primary;
+$alert-md-button-text-color: $light; 
+$alert-md-input-border-color: $magenta;
+$alert-md-input-text-color: $light;
+$text-input-md-margin-top: 1px;
+$text-input-md-margin-bottom: 1px;
 
 // App Windows Variables
 // --------------------------------------------------

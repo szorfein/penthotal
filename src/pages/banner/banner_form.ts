@@ -24,15 +24,15 @@ export class BannerFormPage {
             message: '',
             inputs: [
                 {
-                    name: this.form.title,
+                    name: this.form.value.title,
                     placeholder: 'Title'
                 },
                 {
-                    name: this.form.subtitle,
+                    name: this.form.value.subtitle,
                     placeholder: 'Subtitle'
                 },
                 {
-                    name: this.form.image,
+                    name: this.form.value.image,
                     placeholder: 'image.jpg'
                 }
             ],

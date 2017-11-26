@@ -1,6 +1,9 @@
+@import '../../theme/colors';
+
 .alert-wrapper {
-    color: #aaa;
+
     .alert-head {
-        border-bottom: 1px solid #444;
+        color: $fg;
+        border-bottom: 1px solid $bgBorder;
     }
 }
