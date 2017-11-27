@@ -1,3 +1,11 @@
-<div padding>
-    <button class="index-nav" ion-button color="secondary" round>Screenshots</button>
+<div class="index-nav" padding>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-12 col-sm-6 *ngFor="let p of pages">
+                <button class="index-nav" ion-button color="secondary" (click)="openPage(p)" round outline>
+                    {{ p.title }}
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </div>

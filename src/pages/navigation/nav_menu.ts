@@ -12,9 +12,7 @@ export class NavMenuPage {
     @ViewChild('content') content: NavController
     rootPage : any
     pages = [
-        { title: 'Home', component: IndexPage },
-        { title: 'Screenshots', component: '' },
-        { title: 'Articles', component: '' }
+        { title: 'Home', component: IndexPage }
     ]
 
     constructor() {

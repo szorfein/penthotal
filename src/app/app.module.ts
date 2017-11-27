@@ -19,6 +19,9 @@ import { LoginModalPage } from '../pages/login/login_modal'
 import { LoginPage } from '../pages/login/login'
 import { LoginFormPage } from '../pages/login/login_form'
 
+import { ArticlePage } from '../pages/article/article'
+import { ScreenPage } from '../pages/screen/screen'
+
 @NgModule({
   declarations: [
       MyApp,
@@ -30,7 +33,9 @@ import { LoginFormPage } from '../pages/login/login_form'
       NavMenuPage,
       LoginPage,
       LoginModalPage,
-      LoginFormPage
+      LoginFormPage,
+      ArticlePage,
+      ScreenPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,9 @@ import { LoginFormPage } from '../pages/login/login_form'
     IndexPage,
     NavMenuPage,
     LoginPage,
-    LoginModalPage
+    LoginModalPage,
+    ArticlePage,
+    ScreenPage
   ],
   providers: [
     StatusBar,
