@@ -6,10 +6,11 @@
 
 <ion-slides>
     <ion-slide class="index" *ngFor="let banner of banners | async">
+        <img class="banner" [src]="banner.img" />
         <div class="filter-banner">
-            <img class="banner" [src]="banner.img" />
             <h1>{{ banner.title }}</h1>
             <p>{{ banner.subtitle }}</p>
+            <index-nav></index-nav>
         </div>
     </ion-slide>
 </ion-slides>

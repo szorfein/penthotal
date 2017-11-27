@@ -45,12 +45,16 @@ $colors: (
   trans:      $trans
 );
 
-// alert
-$alert-md-background-color: $dark;
-$alert-wp-backdrop-background: $dark;
-$alert-wp-input-text-color: $light;
+/* 
+* 
+*/
 
-// menu
+$text-input-placeholder-color: #666;
+
+/* 
+*
+*/ 
+
 $menu-width: 200px;
 
 // App iOS Variables
@@ -65,17 +69,23 @@ $alert-ios-input-text-color: $light;
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
+$alert-md-background-color: $dark;
 $alert-md-button-background-color: $primary;
 $alert-md-button-text-color: $light; 
 $alert-md-input-border-color: $magenta;
 $alert-md-input-text-color: $light;
-$text-input-md-margin-top: 1px;
+$label-md-margin-top: .4em;
+$label-md-margin-bottom: .4em;
+$text-input-md-background-color: trans;
 $text-input-md-margin-bottom: 1px;
+$text-input-md-margin-top: 1px;
 
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
 
+$alert-wp-backdrop-background: $dark;
+$alert-wp-input-text-color: $light;
 
 
 

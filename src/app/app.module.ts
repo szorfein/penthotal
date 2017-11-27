@@ -11,6 +11,9 @@ import { NavBarPage } from '../pages/navigation/nav_bar'
 
 import { MyApp } from './app.component';
 
+// index
+import { IndexNavPage } from '../pages/index/index_nav'
+
 // login
 import { LoginModalPage } from '../pages/login/login_modal' 
 import { LoginPage } from '../pages/login/login'
@@ -20,6 +23,7 @@ import { LoginFormPage } from '../pages/login/login_form'
   declarations: [
       MyApp,
       IndexPage,
+      IndexNavPage,
       BannerPage,
       BannerFormPage,
       NavBarPage,
