@@ -5,6 +5,7 @@ import { Component } from '@angular/core'
 })
 
 export class ArticlePage {
+    private title : string = 'Articles'
 
     constructor() {}
 }

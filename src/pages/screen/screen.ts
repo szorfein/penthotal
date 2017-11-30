@@ -5,6 +5,7 @@ import { Component } from '@angular/core'
 })
 
 export class ScreenPage {
+    private title : string = 'Screenshots'
 
     constructor() {}
 
