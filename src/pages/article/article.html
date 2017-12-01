@@ -3,5 +3,25 @@
 </ion-header>
 
 <ion-content>
-    Article
+    <ion-card *ngFor="let a of articles">
+        <h2>{{ a.title }}</h2>
+        <p>{{ a.posted }}</p>
+        <img [src]="a.img" />
+        <ion-card-content>
+            <p>{{ a.description }}</p>
+        </ion-card-content>
+        <ion-row>
+            <ion-col>
+                <button ion-button icon-left clear small>
+                    <ion-icon name="share"></ion-icon>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-right clear small>
+                    <ion-icon name="thumbs-up"></ion-icon>
+                    <div>{{ a.like }}</div>
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
 </ion-content>

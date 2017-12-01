@@ -3,5 +3,12 @@
 </ion-header>
 
 <ion-content>
-    Screenshots
+    <ion-card *ngFor="let i of imgs">
+        <ion-card-content>
+            <ion-card-title>
+                {{ i.title }}
+            </ion-card-title>
+        </ion-card-content>
+        <img [src]="i.url" />
+    </ion-card>
 </ion-content>
