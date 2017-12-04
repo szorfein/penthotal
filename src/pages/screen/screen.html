@@ -3,12 +3,23 @@
 </ion-header>
 
 <ion-content>
-    <ion-card *ngFor="let i of imgs">
-        <ion-card-content>
-            <ion-card-title>
-                {{ i.title }}
-            </ion-card-title>
-        </ion-card-content>
-        <img [src]="i.url" />
-    </ion-card>
+    <ion-grid>
+        <div class="m-nav">
+            <h2>Left Menu</h2>
+        </div>
+        <div class="side" padding>
+            <ion-row>
+                <ion-col *ngFor="let i of imgs" col-12 col-md-6>
+                <ion-card>
+                    <ion-card-content>
+                        <ion-card-title>
+                            {{ i.title }}
+                        </ion-card-title>
+                    </ion-card-content>
+                    <img [src]="i.url" />
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        </div>
+    </ion-grid>
 </ion-content>

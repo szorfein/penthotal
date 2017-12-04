@@ -14,3 +14,31 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@import '../theme/colors';
+
+.content {
+    background-color: $bg2;
+    color: $fg;
+}
+
+.card {
+
+    background-color: $primary;
+
+    .card-title {
+        font-size: 1em;
+        height: 1.5em;
+        color: $fg2;
+    }
+
+    .card-header {
+        height: 1.5em;
+        color: $fg2;
+
+        &:h1,h2,h3,h4,h5 {
+            font-size: 1em;
+        }
+
+    }
+}

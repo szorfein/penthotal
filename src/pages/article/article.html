@@ -3,25 +3,40 @@
 </ion-header>
 
 <ion-content>
-    <ion-card *ngFor="let a of articles">
-        <h2>{{ a.title }}</h2>
-        <p>{{ a.posted }}</p>
-        <img [src]="a.img" />
-        <ion-card-content>
-            <p>{{ a.description }}</p>
-        </ion-card-content>
+    <ion-grid>
         <ion-row>
-            <ion-col>
-                <button ion-button icon-left clear small>
-                    <ion-icon name="share"></ion-icon>
-                </button>
-            </ion-col>
-            <ion-col>
-                <button ion-button icon-right clear small>
-                    <ion-icon name="thumbs-up"></ion-icon>
-                    <div>{{ a.like }}</div>
-                </button>
+            <ion-col *ngFor="let a of articles" col-12 col-md-6>
+                <ion-card>
+                    <ion-card-header>
+                        <h2>{{ a.title }}</h2>
+                        <p>{{ a.posted }}</p>
+                    </ion-card-header>
+                    <img class="img-article" [src]="a.img" />
+                    <ion-card-content>
+                        <p>{{ a.description }}</p>
+                    </ion-card-content>
+                    <ion-row>
+                        <ion-col>
+                            <ion-fab left edge>
+                                <button ion-fab mini>
+                                    <ion-icon name="share"></ion-icon>
+                                </button>
+                                <ion-fab-list side="right">
+                                    <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+                                    <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+                                    <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+                                </ion-fab-list>
+                            </ion-fab>
+                        </ion-col>
+                        <ion-col>
+                            <button ion-button icon-right clear small>
+                                <ion-icon name="thumbs-up"></ion-icon>
+                                <div>{{ a.like }}</div>
+                            </button>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
             </ion-col>
         </ion-row>
-    </ion-card>
+    </ion-grid>
 </ion-content>

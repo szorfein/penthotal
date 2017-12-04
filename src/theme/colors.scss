@@ -2,16 +2,22 @@
 $magenta: #4b3c50;
 $cyan: #00695C;
 $white: #BEBEBE;
+$white2: #c0c0c0;
 
 $primary: $cyan;
 $secondary: $magenta;
 $danger: #f53d3d;
 $light: #D7CCC8;
-$dark: rgba(20,25,24,1);
+$dark: #0b0c0c;
+$dark-secondary: rgba(2,4,4,.9);
 $banner: rgba(6,6,8,.95);
 $trans: rgba(18,18,20,.1);
 
+/* Variables for all apps */
 $bg: $dark;
+$bg2: $dark-secondary;
+$fg: $white;
+$fg2: $white2;
 $bgHover: #004D40;
 $bgBorder: $magenta;
 $fg: $light;

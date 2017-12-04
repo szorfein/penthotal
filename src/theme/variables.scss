@@ -42,7 +42,8 @@ $colors: (
   light:      $light,
   dark:       $dark,
   banner:     $banner,
-  trans:      $trans
+  trans:      $trans,
+  bg:         $bg
 );
 
 /* 
@@ -55,7 +56,7 @@ $text-input-placeholder-color: #666;
 *
 */ 
 
-$menu-width: 200px;
+$menu-width: 160px;
 
 // App iOS Variables
 // --------------------------------------------------
@@ -87,8 +88,6 @@ $text-input-md-margin-top: 1px;
 $alert-wp-backdrop-background: $dark;
 $alert-wp-input-text-color: $light;
 
-
-
 // App Theme
 // --------------------------------------------------
 // Ionic apps can have different themes applied, which can
@@ -98,14 +97,12 @@ $alert-wp-input-text-color: $light;
 
 @import "ionic.theme.default";
 
-
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
 
 @import "ionic.ionicons";
-
 
 // Fonts
 // --------------------------------------------------

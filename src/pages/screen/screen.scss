@@ -1,0 +1,27 @@
+@import '../../theme/colors';
+
+.m-nav {
+
+    visibility: hidden;
+    height: 0;
+    width: 0;
+
+    @media(min-width: 992px) {
+        visibility: visible !important;
+        width: 200px;
+        position: fixed;
+        height: 100%;
+        border-right: 1px solid $secondary;
+    }
+}
+
+.side {
+
+    width: 100%;
+
+    @media(min-width: 992px) {
+        position: absolute;
+        width: 80%;
+        right: 0;
+    }
+}
