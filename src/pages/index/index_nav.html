@@ -1,8 +1,8 @@
-<div class="index-nav" padding>
+<div class="index-nav">
     <ion-grid>
         <ion-row>
-            <ion-col col-12 col-sm-6 *ngFor="let p of pages">
-                <button class="index-nav" ion-button color="secondary" (click)="openPage(p)" round outline>
+            <ion-col *ngFor="let p of pages">
+                <button class="index-nav" ion-button color="primary" (click)="openPage(p)" clear>
                     {{ p.title }}
                 </button>
             </ion-col>
