@@ -10,16 +10,38 @@
         <div class="side" padding>
             <ion-row>
                 <ion-col *ngFor="let i of imgs" col-12 col-md-6>
-                <ion-card>
-                    <ion-card-content>
-                        <ion-card-title>
-                            {{ i.title }}
-                        </ion-card-title>
-                    </ion-card-content>
-                    <img [src]="i.url" />
-                </ion-card>
-            </ion-col>
-        </ion-row>
+                    <ion-card>
+                        <ion-row>
+                            <ion-col>
+                                <h2>{{ i.title }}</h2>
+                            </ion-col>
+                            <ion-col>
+                                <ion-buttons right>
+                                    <button icon-only ion-button>
+                                        <ion-icon name="more"></ion-icon>
+                                    </button>
+                                </ion-buttons>
+                            </ion-col>
+                        </ion-row>
+                        <img [src]="i.url" />
+                        <ion-row>
+                            <ion-col>
+                                <p>Post a comment</p>
+                            </ion-col>
+                            <ion-col>
+                                <ion-buttons end>
+                                    <button ion-button icon-only>
+                                        <ion-icon name="share"></ion-icon>
+                                    </button>
+                                    <button ion-button>
+                                        +1
+                                    </button>
+                                </ion-buttons>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
         </div>
     </ion-grid>
 </ion-content>
