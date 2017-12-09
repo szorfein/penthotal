@@ -56,7 +56,8 @@ $text-input-placeholder-color: #666;
 *
 */ 
 
-$menu-width: 160px;
+$menu-width: $menu-w;
+$menu-small-width: $menu-w;
 
 // App iOS Variables
 // --------------------------------------------------

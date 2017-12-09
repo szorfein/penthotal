@@ -6,23 +6,53 @@
     height: 0;
     width: 0;
 
-    @media(min-width: 992px) {
+    @media(min-width: 768px) {
         visibility: visible !important;
-        width: 200px;
+        width: $menu-w;
         position: fixed;
         height: 100%;
         border-right: 1px solid $secondary;
     }
 }
 
+
 .side {
 
-    width: 100%;
     padding: 0 !important;
+    width: 100%;
+
+    .card.card-md {
+        margin: 0;
+        width: 100%;
+    }
+
+    @media(min-width: 500px) {
+        width: 92%;
+        margin: auto;
+    }
+
+    @media(min-width: 650px) {
+        width: 85%;
+    }
+
+    @media(min-width: 750px) {
+        position: absolute;
+        left: $menu-w;
+        width: calc(100% - #{$menu-w});
+        .card.card-md {
+            margin: 10px auto;
+            width: 85%;
+        }
+    }
 
     @media(min-width: 992px) {
-        position: absolute;
-        width: 79%;
-        right: 0;
+        padding: 5px 16px !important;
+        .card.card-md {
+            width: 96%;
+        }
+    }
+    @media(min-width: 1200px) {
+        padding: 1% 5% !important;
     }
 }
+

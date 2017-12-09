@@ -1,15 +1,5 @@
 @import "../../theme/colors";
 
-.menu-inner {
-
-    @media(min-width:576px) {
-        width: 290px;
-    }
-    @media(min-width:768px) {
-        width: 400px;
-    }
-}
-
 .main_menu {
 
     background-color: $bg;
