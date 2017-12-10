@@ -20,7 +20,10 @@ import { LoginPage } from '../pages/login/login'
 import { LoginFormPage } from '../pages/login/login_form'
 
 import { ArticlePage } from '../pages/article/article'
+
+// screen
 import { ScreenPage } from '../pages/screen/screen'
+import { ScreenDetailsPage } from '../pages/screen/screen-details'
 
 @NgModule({
   declarations: [
@@ -35,7 +38,8 @@ import { ScreenPage } from '../pages/screen/screen'
       LoginModalPage,
       LoginFormPage,
       ArticlePage,
-      ScreenPage
+      ScreenPage,
+      ScreenDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -49,7 +53,8 @@ import { ScreenPage } from '../pages/screen/screen'
     LoginPage,
     LoginModalPage,
     ArticlePage,
-    ScreenPage
+    ScreenPage,
+    ScreenDetailsPage
   ],
   providers: [
     StatusBar,

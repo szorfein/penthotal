@@ -23,7 +23,7 @@
                                 </ion-buttons>
                             </ion-col>
                         </ion-row>
-                        <img [src]="i.url" />
+                        <img [src]="i.url" (click)="openScreenDetails(i)" />
                         <ion-row>
                             <ion-col>
                                 <p>Post a comment</p>

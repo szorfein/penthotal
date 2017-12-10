@@ -18,11 +18,11 @@
 
 .side {
 
-    padding: 0 !important;
+    padding: 10px 0 !important;
     width: 100%;
 
     .card.card-md {
-        margin: 0;
+        margin: 10px 0;
         width: 100%;
     }
 
@@ -46,11 +46,12 @@
     }
 
     @media(min-width: 992px) {
-        padding: 5px 16px !important;
+        padding: 10px 16px !important;
         .card.card-md {
             width: 96%;
         }
     }
+
     @media(min-width: 1200px) {
         padding: 1% 5% !important;
     }
