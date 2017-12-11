@@ -1,0 +1,29 @@
+@import '../../theme/colors';
+
+.slidePrev {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    background-color: $bgFilterImg;
+    width: 50px;
+
+    button {
+        top: 38%;
+        width: 45px;
+    }
+}
+
+.slideNext {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    background-color: $bgFilterImg;
+    width: 50px;
+
+    button {
+        top: 38%;
+        width: 45px;
+    }
+}

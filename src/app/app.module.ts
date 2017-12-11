@@ -25,6 +25,9 @@ import { ArticlePage } from '../pages/article/article'
 import { ScreenPage } from '../pages/screen/screen'
 import { ScreenDetailsPage } from '../pages/screen/screen-details'
 
+// shared
+import { SlideComponent } from '../pages/shared/slide'
+
 @NgModule({
   declarations: [
       MyApp,
@@ -39,7 +42,8 @@ import { ScreenDetailsPage } from '../pages/screen/screen-details'
       LoginFormPage,
       ArticlePage,
       ScreenPage,
-      ScreenDetailsPage
+      ScreenDetailsPage,
+      SlideComponent
   ],
   imports: [
     BrowserModule,
