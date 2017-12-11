@@ -5,6 +5,18 @@
 <ion-content>
     <ion-slides>
         <ion-slide>
+            <ion-toolbar color="trans">
+                <ion-buttons left>
+                    <button ion-button large clear icon-only color="primary">
+                        <ion-icon name="arrow-back"></ion-icon>
+                    </button>
+                </ion-buttons>
+                <ion-buttons end>
+                    <button ion-button large clear icon-only color="primary">
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </button>
+                </ion-buttons>
+            </ion-toolbar>
             <img [src]="item.url" />
         </ion-slide>
     </ion-slides>

@@ -11,7 +11,58 @@
                         <h2>{{ a.title }}</h2>
                         <p>{{ a.posted }}</p>
                     </ion-card-header>
-                    <img class="img-article" [src]="a.img" />
+                    <div *ngIf="a.images.length == 1">
+                        lenght {{ a.images.length }}
+                        <img class="img-article" [src]="a.images[0]" />
+                    </div>
+                    <div *ngIf="a.images.length > 1">
+                        lenght {{ a.images.length }}
+                        <ion-slides>
+                            <ion-slide *ngFor="let img of a.images, let index = index">
+
+                                <!-- TODO: 2 need to be replace by var lastElement -->
+                                <div *ngIf="index === 0; then blockStart"></div>
+                                <div *ngIf="index === 2; then blockEnd"></div>
+                                <div *ngIf="index !== 0 && index !== 2 ; then blockDual"></div>
+                                <ng-template #blockStart>
+                                    <ion-toolbar color="dark">
+                                        <ion-buttons end>
+                                            <button ion-button large clear icon-only color="primary">
+                                                <ion-icon name="arrow-forward"></ion-icon>
+                                            </button>
+                                        </ion-buttons>
+                                    </ion-toolbar>
+                                </ng-template>
+
+                                <ng-template #blockEnd>
+                                    <ion-toolbar color="dark">
+                                        <ion-buttons left>
+                                            <button ion-button large clear icon-only color="primary">
+                                                <ion-icon name="arrow-back"></ion-icon>
+                                            </button>
+                                        </ion-buttons>
+                                    </ion-toolbar>
+                                </ng-template>
+
+                                <ng-template #blockDual>
+                                    <ion-toolbar color="dark">
+                                        <ion-buttons left>
+                                            <button ion-button large clear icon-only color="primary">
+                                                <ion-icon name="arrow-back"></ion-icon>
+                                            </button>
+                                        </ion-buttons>
+                                        <ion-buttons end>
+                                            <button ion-button large clear icon-only color="primary">
+                                                <ion-icon name="arrow-forward"></ion-icon>
+                                            </button>
+                                        </ion-buttons>
+                                    </ion-toolbar>
+                                </ng-template>
+
+                                <img class="img-article" [src]="img" />
+                            </ion-slide>
+                        </ion-slides>
+                    </div>
                     <ion-card-content>
                         <p>{{ a.description }}</p>
                     </ion-card-content>
