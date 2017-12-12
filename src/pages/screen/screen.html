@@ -9,7 +9,7 @@
         </div>
         <div class="side" padding>
             <ion-row>
-                <ion-col *ngFor="let i of imgs" col-12 col-lg-6>
+                <ion-col *ngFor="let i of items" col-12 col-lg-6>
                     <ion-card>
                         <ion-row>
                             <ion-col>
@@ -23,7 +23,7 @@
                                 </ion-buttons>
                             </ion-col>
                         </ion-row>
-                        <img [src]="i.url" (click)="openScreenDetails(i)" />
+                        <slide [images]="i.images" [display]="display"></slide>
                         <ion-row>
                             <ion-col>
                                 <p>Post a comment</p>

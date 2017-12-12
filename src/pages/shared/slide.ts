@@ -1,5 +1,10 @@
-import { Component, Input, OnInit, ViewChild } from '@angular/core'
-import { Slides } from 'ionic-angular'
+import { Component, Input, OnInit, ViewChild, TemplateRef } from '@angular/core'
+import { Slides, NavController } from 'ionic-angular'
+
+import { ScreenDetailsPage } from '../screen/screen-details'
+import { PostDetailsPage } from '../post/post-details'
+
+enum Display { link, nolink }
 
 @Component({
     selector: 'slide',
@@ -10,6 +15,7 @@ export class SlideComponent implements OnInit {
 
     @ViewChild(Slides) slides: Slides
     @Input() images : string[]
+    @Input() display : string
     len : number
 
     @ViewChild('blockStart')
@@ -21,16 +27,21 @@ export class SlideComponent implements OnInit {
 
     slideWindow : TemplateRef<any>|null = null;
 
-    constructor() {}
+    displayLink : boolean = false
+    displayNoLink : boolean = false
+
+    constructor(public nav: NavController) {}
 
     ngOnInit() {
+        this.lookDisplay()
         this.len = this.images.length
         this.slideWindow = this.blockStart
     }
 
     goNext() {
         this.slides.slideNext()
-        if (this.slides.isEnd()) {
+
+        if (this.slides.isEnd() || this.isEnd()) {
             this.slideWindow = this.blockEnd
         } else {
             this.slideWindow = this.blockDual
@@ -39,11 +50,33 @@ export class SlideComponent implements OnInit {
 
     goPrev() {
         this.slides.slidePrev()
-        if (this.slides.isBeginning()) {
+
+        if (this.slides.isBeginning() || this.isStart()) {
             this.slideWindow = this.blockStart
         } else {
             this.slideWindow = this.blockDual
         }
     }
 
+    openScreenDetails(item) {
+        this.nav.push(ScreenDetailsPage, { item: item })
+    }
+
+    private isEnd() {
+        let currentIndex = this.slides.getActiveIndex()
+        return !!(currentIndex == this.len)
+    }
+
+    private isStart() {
+        let currentIndex = this.slides.getActiveIndex()
+        return !!(currentIndex == 0)
+    }
+
+    private lookDisplay() {
+        if (this.display == Display[0]) {
+            this.displayLink = true
+        } else if (this.display == Display[1]) {
+            this.displayNoLink = true
+        } 
+    }
 }

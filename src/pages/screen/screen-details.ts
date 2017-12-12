@@ -7,9 +7,11 @@ import { NavParams } from 'ionic-angular'
 
 export class ScreenDetailsPage {
 
-    item : [ {title: string, url: string }]
+    item : any[]
+    private display : string
 
     constructor(params: NavParams) {
+        this.display = 'nolink'
         this.item = params.data.item
     }
 

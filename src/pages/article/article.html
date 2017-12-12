@@ -1,5 +1,4 @@
 <ion-header>
-    <navbar [title]="title"></navbar>
 </ion-header>
 
 <ion-content>
@@ -11,7 +10,7 @@
                         <h2>{{ a.title }}</h2>
                         <p>{{ a.posted }}</p>
                     </ion-card-header>
-                    <slide [images]="a.images"></slide>
+                    <slide [images]="a.images" [display]="display"></slide>
                     <ion-card-content>
                         <p>{{ a.description }}</p>
                     </ion-card-content>

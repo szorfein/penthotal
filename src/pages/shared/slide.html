@@ -1,5 +1,6 @@
 <div *ngIf="images.length == 1">
-    <img [src]="images[0]" />
+    <img *ngIf="displayLink" [src]="images[0]" (click)="openScreenDetails(images)" />
+    <img *ngIf="displayNoLink" [src]="images[0]" />
 </div>
 
 <div *ngIf="images.length > 1">
@@ -37,7 +38,8 @@
                 </div>
             </ng-template>
 
-            <img [src]="img" />
+            <img *ngIf="displayLink" [src]="img" (click)="openScreenDetails(images)" />
+            <img *ngIf="displayNoLink" [src]="img" />
 
         </ion-slide>
     </ion-slides>

@@ -7,8 +7,10 @@ import { Component } from '@angular/core'
 export class ArticlePage {
     private title : string 
     private articles : any[]
+    private display : string
 
     constructor() {
+        this.display = 'link'
         this.title = 'Articles'
         this.articles = [
             {

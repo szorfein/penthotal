@@ -1,24 +1,45 @@
 import { Component } from '@angular/core'
-import { NavController } from 'ionic-angular'
-import { ScreenDetailsPage } from './screen-details'
 
 @Component({
     templateUrl : 'screen.html'
 })
 
 export class ScreenPage {
-    private title : string = 'Screenshots'
-    private imgs : any[]
+    private title : string
+    private items : any[]
+    private display: string
 
-    constructor(public nav: NavController) {
-        this.imgs = [
-            { title: 'Cybergirl', url: 'https://i.imgur.com/ygk1LDMl.png' },
-            { title: 'Dragon', url: 'https://i.imgur.com/vOCpUA9l.png' },
-            { title: 'Galactic', url: 'https://i.imgur.com/Vpzg41ml.png' }
+    constructor() {
+        this.display = 'link'
+        this.title = 'Screenshots'
+        this.items = [
+            {
+                title: 'Cybergirl',
+                images: [ 'https://i.imgur.com/ygk1LDMl.png', 'https://i.imgur.com/ul0LbjZl.png', 'https://i.imgur.com/0xFF5LMl.png', 'https://i.imgur.com/exlvFG1l.png' ],
+                post: '',
+                description: '',
+                poster: '',
+                posted: '',
+                like: ''
+            },
+            {
+                title: 'Dragon',
+                images: [ 'https://i.imgur.com/vOCpUA9l.png' ],
+                post: '',
+                description: '',
+                poster: '',
+                posted: '',
+                like: ''
+            },
+            {
+                title: 'Galactic',
+                images: [ 'https://i.imgur.com/Vpzg41ml.png' ],
+                post: '',
+                description: '',
+                poster: '',
+                posted: '',
+                like: ''
+            }
         ]
-    }
-
-    openScreenDetails(item) {
-        this.nav.push(ScreenDetailsPage, { item: item })
     }
 }
