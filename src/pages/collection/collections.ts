@@ -1,10 +1,10 @@
 import { Component } from '@angular/core'
 
 @Component({
-    templateUrl : 'collection.html'
+    templateUrl : 'collections.html'
 })
 
-export class CollectionPage {
+export class CollectionsPage {
 
     constructor() {}
 

@@ -23,7 +23,12 @@
                                 </ion-buttons>
                             </ion-col>
                         </ion-row>
-                        <slide [images]="i.images" [display]="display"></slide>
+                        <div *ngIf="i.images.length > 1">
+                            <slide [images]="i.images" [display]="display"></slide>
+                        </div>
+                        <div *ngIf="i.images.length === 1">
+                            <img [src]="i.images[0]" (click)="openPostDetails(i)" />
+                        </div>
                         <ion-row>
                             <ion-col>
                                 <p>Post a comment</p>

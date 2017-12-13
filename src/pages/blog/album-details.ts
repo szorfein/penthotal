@@ -2,10 +2,10 @@ import { Component } from '@angular/core'
 import { NavParams } from 'ionic-angular'
 
 @Component({
-    templateUrl: 'screen-details.html'
+    templateUrl: 'album-details.html'
 })
 
-export class ScreenDetailsPage {
+export class AlbumDetailsPage {
 
     item : any[]
     private display : string
@@ -14,5 +14,4 @@ export class ScreenDetailsPage {
         this.display = 'nolink'
         this.item = params.data.item
     }
-
 }

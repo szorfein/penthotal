@@ -1,46 +1,39 @@
-<div *ngIf="images.length == 1">
-    <img *ngIf="displayLink" [src]="images[0]" (click)="openScreenDetails(images)" />
-    <img *ngIf="displayNoLink" [src]="images[0]" />
-</div>
+<ion-slides>
+    <ion-slide *ngFor="let img of images, let index = index">
 
-<div *ngIf="images.length > 1">
-    <ion-slides>
-        <ion-slide *ngFor="let img of images, let index = index">
+        <div *ngIf="index; then slideWindow; else blockStart"></div>
 
-            <div *ngIf="index; then slideWindow; else blockStart"></div>
+        <ng-template #blockStart>
+            <div class="slideNext">
+                <button ion-button large clear icon-only color="primary" (click)="goNext()">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                </button>
+            </div>
+        </ng-template>
 
-            <ng-template #blockStart>
-                <div class="slideNext">
-                    <button ion-button large clear icon-only color="primary" (click)="goNext()">
-                        <ion-icon name="arrow-forward"></ion-icon>
-                    </button>
-                </div>
-            </ng-template>
+        <ng-template #blockEnd>
+            <div class="slidePrev">
+                <button ion-button large clear icon-only color="primary" (click)="goPrev()">
+                    <ion-icon name="arrow-back"></ion-icon>
+                </button>
+            </div>
+        </ng-template>
 
-            <ng-template #blockEnd>
-                <div class="slidePrev">
-                    <button ion-button large clear icon-only color="primary" (click)="goPrev()">
-                        <ion-icon name="arrow-back"></ion-icon>
-                    </button>
-                </div>
-            </ng-template>
+        <ng-template #blockDual>
+            <div class="slidePrev">
+                <button ion-button large clear icon-only color="primary" (click)="goPrev()">
+                    <ion-icon name="arrow-back"></ion-icon>
+                </button>
+            </div>
+            <div class="slideNext">
+                <button ion-button large clear icon-only color="primary" (click)="goNext()">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                </button>
+            </div>
+        </ng-template>
 
-            <ng-template #blockDual>
-                <div class="slidePrev">
-                    <button ion-button large clear icon-only color="primary" (click)="goPrev()">
-                        <ion-icon name="arrow-back"></ion-icon>
-                    </button>
-                </div>
-                <div class="slideNext">
-                    <button ion-button large clear icon-only color="primary" (click)="goNext()">
-                        <ion-icon name="arrow-forward"></ion-icon>
-                    </button>
-                </div>
-            </ng-template>
+        <img *ngIf="displayLink" [src]="img" (click)="openScreenDetails(images)" />
+        <img *ngIf="displayNoLink" [src]="img" />
 
-            <img *ngIf="displayLink" [src]="img" (click)="openScreenDetails(images)" />
-            <img *ngIf="displayNoLink" [src]="img" />
-
-        </ion-slide>
-    </ion-slides>
-</div>
+    </ion-slide>
+</ion-slides>

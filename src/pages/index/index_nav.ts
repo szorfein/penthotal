@@ -1,7 +1,6 @@
 import { Component } from '@angular/core'
 import { NavController } from 'ionic-angular'
-import { ArticlePage } from '../article/article'
-import { ScreenPage } from '../screen/screen'
+import { PostListPage } from '../blog/post-list'
 
 @Component({
     selector: 'index-nav',
@@ -15,8 +14,7 @@ export class IndexNavPage {
     constructor(public nav: NavController) {
     
         this.pages = [
-            { title: 'Screenshots', component: ScreenPage },
-            { title: 'Articles', component: ArticlePage }
+            { title: 'Blog', component: PostListPage }
         ]
     }
 

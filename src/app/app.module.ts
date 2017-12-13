@@ -19,14 +19,16 @@ import { LoginModalPage } from '../pages/login/login_modal'
 import { LoginPage } from '../pages/login/login'
 import { LoginFormPage } from '../pages/login/login_form'
 
-import { ArticlePage } from '../pages/article/article'
-
-// screen
-import { ScreenPage } from '../pages/screen/screen'
-import { ScreenDetailsPage } from '../pages/screen/screen-details'
+// collections
+import { CollectionsPage } from '../pages/collection/collections'
 
 // shared
 import { SlideComponent } from '../pages/shared/slide'
+
+// post
+import { PostListPage } from '../pages/blog/post-list'
+import { PostDetailsPage } from '../pages/blog/post-details'
+import { AlbumDetailsPage } from '../pages/blog/album-details'
 
 @NgModule({
   declarations: [
@@ -40,10 +42,11 @@ import { SlideComponent } from '../pages/shared/slide'
       LoginPage,
       LoginModalPage,
       LoginFormPage,
-      ArticlePage,
-      ScreenPage,
-      ScreenDetailsPage,
-      SlideComponent
+      PostListPage,
+      PostDetailsPage,
+      AlbumDetailsPage,
+      SlideComponent,
+      CollectionsPage
   ],
   imports: [
     BrowserModule,
@@ -56,9 +59,9 @@ import { SlideComponent } from '../pages/shared/slide'
     NavMenuPage,
     LoginPage,
     LoginModalPage,
-    ArticlePage,
-    ScreenPage,
-    ScreenDetailsPage
+    PostListPage,
+    PostDetailsPage,
+    AlbumDetailsPage
   ],
   providers: [
     StatusBar,

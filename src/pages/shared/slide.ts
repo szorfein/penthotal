@@ -1,8 +1,7 @@
 import { Component, Input, OnInit, ViewChild, TemplateRef } from '@angular/core'
 import { Slides, NavController } from 'ionic-angular'
 
-import { ScreenDetailsPage } from '../screen/screen-details'
-import { PostDetailsPage } from '../post/post-details'
+import { AlbumDetailsPage } from '../blog/album-details'
 
 enum Display { link, nolink }
 
@@ -59,7 +58,7 @@ export class SlideComponent implements OnInit {
     }
 
     openScreenDetails(item) {
-        this.nav.push(ScreenDetailsPage, { item: item })
+        this.nav.push(AlbumDetailsPage, { item: item })
     }
 
     private isEnd() {
