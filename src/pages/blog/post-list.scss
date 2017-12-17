@@ -22,6 +22,10 @@
     padding: 10px 0 !important;
     width: 100%;
 
+    .articles {
+        width: 100%;
+    }
+
     .card.card-md {
         margin: 10px 0;
         width: 100%;
@@ -58,3 +62,23 @@
     }
 }
 
+.collection {
+
+    background-color: $dark-secondary;
+    margin-left: 1em;
+
+    ion-segment {
+        display: block;
+
+        ion-segment-button.item.segment-button {
+            width: 100% !important;
+            text-align: left;
+        }
+
+        ion-badge.badge.badge-md {
+            position: absolute;
+            right: 0;
+            top: 12px;
+        }
+    }
+}

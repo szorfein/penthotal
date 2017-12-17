@@ -19,14 +19,12 @@ import { LoginModalPage } from '../pages/login/login_modal'
 import { LoginPage } from '../pages/login/login'
 import { LoginFormPage } from '../pages/login/login_form'
 
-// collections
-import { CollectionsPage } from '../pages/collection/collections'
-
 // shared
 import { SlideComponent } from '../pages/shared/slide'
 
 // post
 import { PostListPage } from '../pages/blog/post-list'
+import { PostListComponent } from '../pages/blog/post-list.component'
 import { PostDetailsPage } from '../pages/blog/post-details'
 import { AlbumDetailsPage } from '../pages/blog/album-details'
 
@@ -46,7 +44,7 @@ import { AlbumDetailsPage } from '../pages/blog/album-details'
       PostDetailsPage,
       AlbumDetailsPage,
       SlideComponent,
-      CollectionsPage
+      PostListComponent
   ],
   imports: [
     BrowserModule,
