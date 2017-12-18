@@ -23,8 +23,8 @@ export class PostListPage {
                 follower : [ 'doug', 'sre' ]
             },
             {
-                name : 'Art',
-                desc: 'Collection of art screen',
+                name : 'Articles',
+                desc: 'Wikis',
                 follower: [ 'jed', 'rod', 'satie' ]
             },
             {

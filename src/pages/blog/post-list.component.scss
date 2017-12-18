@@ -1,0 +1,15 @@
+@import '../../theme/colors';
+
+.post-content {
+    height: 128px;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.more {
+    position: absolute;
+    bottom: 65px;
+    right: 45px;
+}

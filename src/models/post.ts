@@ -11,5 +11,6 @@ export interface Post {
     description?: string
     poster?: string
     like?: string[]
-    collection?: string
+    collection?: string[]
+    type?: string
 }
