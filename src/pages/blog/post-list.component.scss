@@ -6,10 +6,33 @@
     overflow: hidden;
     text-overflow: ellipsis;
     word-wrap: break-word;
+    width: 90%;
+    line-height: .7em;
+    @media(min-width: 500px) {
+        width: 96%;
+    }
+    @media(min-width: 992px) {
+        width: 94%;
+    }
+    .button-md {
+        font-size: 2.6rem;
+    }
 }
 
 .more {
     position: absolute;
-    bottom: 65px;
-    right: 45px;
+    bottom: 108px;
+    right: 7px;
+    @media(min-width: 268px) {
+        bottom: 64px;
+    }
+    @media(min-width: 500px) {
+        right: 4px;
+    }
+    @media(min-width: 768px) {
+        right: 51px;
+    }
+    @media(min-width: 992px) {
+        right: 7px;
+    }
 }
