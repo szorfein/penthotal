@@ -13,7 +13,8 @@ $light: #D7CCC8;
 $dark: #0b0c0c;
 $dark-secondary: rgba(2,4,4,.9);
 $banner: rgba(6,6,8,.95);
-$trans: rgba(18,18,20,.1);
+$trans: rgba(18,18,20,.02);
+$trans2: rgba(8,16,16,.32);
 
 /* Variables for all apps */
 $bg: $dark;
@@ -23,5 +24,6 @@ $fg2: $white2;
 $bgHover: #004D40;
 $bgBorder: $magenta;
 $fg: $light;
-$bgFilterImg: rgba(20,25,24,.6);
+$bgFilterImg: rgba(6,16,15,.45);
 $menu-w: 194px;
+$button: #221a25;

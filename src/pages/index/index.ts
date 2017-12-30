@@ -6,7 +6,7 @@ import { App , MenuController } from 'ionic-angular'
 })
 
 export class IndexPage {
-    title : string = 'Index'
+    title : string = 'Evil Corp'
 
     constructor(
         app: App, 

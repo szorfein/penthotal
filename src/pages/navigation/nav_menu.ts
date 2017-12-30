@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core'
 import { NavController } from 'ionic-angular'
 import { IndexPage } from '../index/index'
 import { PostListPage } from '../blog/post-list'
+import { AboutPage } from '../about/about'
 
 @Component({
     selector: 'navmenu',
@@ -14,7 +15,8 @@ export class NavMenuPage {
     rootPage : any
     pages = [
         { title: 'Home', component: IndexPage },
-        { title: 'Blog', component: PostListPage }
+        { title: 'Blog', component: PostListPage },
+        { title: 'About', component: AboutPage }
     ]
 
     constructor() {

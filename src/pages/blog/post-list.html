@@ -23,12 +23,14 @@
 
             <div *ngFor="let c of collections">
                 <div *ngSwitchCase="c.name">
+                    <post-list [categorie]="c.name"></post-list>
                 </div>
             </div>
 
             <div class="articles" *ngSwitchDefault>
-                <post-list></post-list>
+                <post-list [categorie]="'All'"></post-list>
             </div>
+
         </div>
     </ion-grid>
 </ion-content>

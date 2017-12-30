@@ -27,6 +27,11 @@ import { PostListPage } from '../pages/blog/post-list'
 import { PostListComponent } from '../pages/blog/post-list.component'
 import { PostDetailsPage } from '../pages/blog/post-details'
 import { AlbumDetailsPage } from '../pages/blog/album-details'
+import { PostCommentFormPage } from '../pages/blog/post-comment-form'
+import { ShareComponent } from '../pages/blog/share.component' 
+
+// about
+import { AboutPage } from '../pages/about/about'
 
 @NgModule({
   declarations: [
@@ -44,7 +49,10 @@ import { AlbumDetailsPage } from '../pages/blog/album-details'
       PostDetailsPage,
       AlbumDetailsPage,
       SlideComponent,
-      PostListComponent
+      PostListComponent,
+      PostCommentFormPage,
+      ShareComponent,
+      AboutPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +67,8 @@ import { AlbumDetailsPage } from '../pages/blog/album-details'
     LoginModalPage,
     PostListPage,
     PostDetailsPage,
-    AlbumDetailsPage
+    AlbumDetailsPage,
+    AboutPage
   ],
   providers: [
     StatusBar,

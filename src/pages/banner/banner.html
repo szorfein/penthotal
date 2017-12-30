@@ -8,8 +8,32 @@
     <ion-slide class="index" *ngFor="let banner of banners | async">
         <img class="banner" [src]="banner.img" />
         <div class="filter-banner">
-            <h1>{{ banner.title }}</h1>
-            <p>{{ banner.subtitle }}</p>
+            <div class="banner-text">
+                <div class="index-portrait-center">
+                    <img class="index-portrait" *ngIf="banner.portrait" [src]="banner.portrait" />
+                </div>
+                <h1 *ngIf="banner.title">{{ banner.title }}</h1>
+                <div *ngIf="banner.subtitles">
+                    <p *ngFor="let s of banner.subtitles">{{ s }}</p>
+                </div>
+            </div>
+            <div class="testimonial" *ngIf="banner.testimonials">
+                <ion-col *ngFor="let t of banner.testimonials">
+                    <p>
+                    {{ t.name }} on {{ t.site }} : {{ t.comment }}
+                    </p>
+                </ion-col>
+            </div>
+            <div class="social-link">
+                <ion-buttons>
+                    <button ion-button icon-only>
+                        <ion-icon name="git"></ion-icon>
+                    </button>
+                    <button ion-button icon-only>
+                        <ion-icon name="reddit"></ion-icon>
+                    </button>
+                </ion-buttons>
+            </div>
         </div>
     </ion-slide>
 </ion-slides>

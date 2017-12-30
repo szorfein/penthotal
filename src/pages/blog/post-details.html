@@ -5,6 +5,11 @@
 <ion-content>
 
     Article post
-    <img [src]="item.images[0]" />
+    <img *ngIf="item.images" [src]="item.images[0]" />
+    <div *ngIf="item.post" class="post">
+        <p>
+        {{ item.post }}
+        </p>
+    </div>
 
 </ion-content>

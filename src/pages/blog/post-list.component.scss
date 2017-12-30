@@ -8,6 +8,10 @@
     word-wrap: break-word;
     width: 90%;
     line-height: .7em;
+    .button-md {
+        width: 1px;
+    }
+
     @media(min-width: 500px) {
         width: 96%;
     }
@@ -30,9 +34,13 @@
         right: 4px;
     }
     @media(min-width: 768px) {
-        right: 51px;
+        right: 63px;
     }
     @media(min-width: 992px) {
         right: 7px;
     }
+}
+
+.article-footer {
+    padding: 5px 5px;
 }

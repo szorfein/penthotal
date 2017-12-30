@@ -24,52 +24,95 @@
         height: 100%;
     }
 
-    h1 {
-        color: white;
-        text-align: center;
-        width: 100%;
+    .banner-text {
         position: absolute;
-        margin:auto;
-        top:32%;
-        font-weight: bold;
-        font-size: 3.5rem;
-
-        @media (min-width: 480px) {
-            font-size: 4rem;
-            top: 30%;
-        }
-
-        @media(min-width:767px) {
-            font-size: 6rem;
-            top: 28%;
-        }
-    }
-
-    p {
-        color: $white;
-        text-align: center;
+        top: 33%;
         width: 100%;
-        position: absolute;
-        margin:auto;
-        top:47%;
-        font-weight: bold;
-        font-size: 1rem;
 
-        @media (min-width: 480px) {
-            font-size: 1.1rem;
-            top: 52%;
+        @media (min-width: 390px) {
+            top: 38%;
         }
 
         @media (min-width: 768px) {
-            font-size: 16px;
-            top: 55%;
+            width: 100%;
+            margin: auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2.8rem;
+            margin-bottom: 1em;
+        }
+
+        p {
+            color: $white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            margin: 0 5%;
+
+            @media (min-width: 237px) {
+                font-size: 1.5rem;
+            }
+
+            @media (min-width: 390px) {
+                line-height: 1.9rem;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 16px;
+            }
         }
     }
 }
 
+.testimonial {
+
+}
+
+.social-link {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+
+    ion-buttons {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.banner-portrait {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 66%;
+    margin: 1em 16%;
+    bottom: 145px;
+
+    @media (min-width: 576px) {
+        width: 256px;
+    }
+
+    @media (min-width: 768px) {
+        width: 256px;
+        margin: auto 32%;
+    }
+}
+
+.index-portrait-center {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 141px;
+    height: 128px;
+}
+
 /*
-* @media(min-width:576px){}
-* @media(min-width:768px){}
-* @media(min-width:992px){}
-* @media(min-width:1200px){}
-*/
+ * @media(min-width:576px){}
+ * @media(min-width:768px){}
+ * @media(min-width:992px){}
+ * @media(min-width:1200px){}
+ */

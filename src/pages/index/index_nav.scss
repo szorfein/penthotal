@@ -1,7 +1,15 @@
+@import '../../theme/colors';
+
 .index-nav {
     text-align: center;
+    background-color: $trans2;
 
     .list-md .item-block .item-inner {
         border: none;
+    }
+
+    .index-nav-button {
+        display: inline-block;
+        padding-left: 1em;
     }
 }

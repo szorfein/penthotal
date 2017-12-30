@@ -9,7 +9,7 @@ import { Banner } from '../../models/banner'
 })
 
 export class BannerPage {
-    banners: Observable<Banner[]>
+    banners: Observable<any[]>
     @ViewChild(Slides) slides: Slides
 
     constructor() {
@@ -25,25 +25,36 @@ export class BannerPage {
         console.log('Current index is', currentIndex)
     }
 
-    private checkBanners(): Observable<Banner[]> {
+    private checkBanners(): Observable<any[]> {
         return Observable.of([
             {
                 _id: 0,
                 img: '/assets/imgs/bg.jpg',
-                title: 'Evil Corp',
-                subtitle: 'Evil Corp control the world'
+                portrait: '/assets/imgs/portrait.png',
+                title: 'Szorfein',
+                subtitles: [
+                    'Like GNU/Linux movement, hackers culture & privacy tools',
+                    'Discover my contrib (screenshots, wiki at blog)'
+                ],
+                testimonials: '',
             },
             {
                 _id: 1,
-                img: '/assets/imgs/bg.jpg',
-                title: 'Control Network',
-                subtitle: 'Evil Corp control the net'
+                img: '/assets/imgs/bg2.jpg',
+                title: '',
+                subtitles: [],
+                testimonials: [ 
+                    { name: 'Luks', site: 'reddit', comment: 'Awesome !!!' } 
+                ]
             },
             {
                 _id: 2,
-                img: '/assets/imgs/bg.jpg',
-                title: 'Control all',
-                subtitle: 'Evil Corp all'
+                img: '/assets/imgs/bg3.jpg',
+                title: '',
+                subtitles: [],
+                testimonials: [ 
+                    { name: 'Luks', site: 'reddit', comment: 'Awesome !!!' }
+                ]
             }
         ])
     }

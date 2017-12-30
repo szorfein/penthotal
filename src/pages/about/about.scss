@@ -1,0 +1,14 @@
+.about {
+    .about-img {
+        width: 100%;
+        margin: auto;
+        background: url('/assets/imgs/bg.jpg') no-repeat;
+
+        .about-portrait {
+            display: block;
+            width: 200px;
+            margin: auto;
+            padding: 1em;
+        }
+    }
+}
